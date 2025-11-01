@@ -151,12 +151,11 @@ nav .right a span{
 /* Slider */
 .slider{
     width: 100%;
-    text-align: center;
     margin: 60px auto;
 }
 .slider img{
-    width: 200px;
-    margin: 0 40px;
+    width: 210px;
+    margin: 0 38px;
 }
 
 
