@@ -125,13 +125,39 @@ nav .right a span{
     border-bottom: 1px solid var(--text-color);
 }
 .brands a img{
-    margin: 0 20px;
+    margin: 0 18px;
     width: 95px;
 }
 .brands .big{
     width: 50px;
 }
 
+
+/* Hero section */
+.hero{
+    width: 80%;
+    margin: 20px auto 0 100px;
+    text-align: left;
+    padding-top: 30px;
+}
+.hero p{
+    color: #0f3156;
+    font-size: 50px;
+}
+.hero span{
+    font-weight: 600;
+}
+
+/* Slider */
+.slider{
+    width: 100%;
+    text-align: center;
+    margin: 60px auto;
+}
+.slider img{
+    width: 200px;
+    margin: 0 40px;
+}
 
 
 /* Responsive */
