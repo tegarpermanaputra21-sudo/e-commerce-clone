@@ -122,7 +122,6 @@ nav .right a span{
     padding-bottom: 20px;
     margin: 25px auto 0;
     text-align: center;
-    border-bottom: 1px solid var(--text-color);
 }
 .brands a img{
     margin: 0 18px;
@@ -130,6 +129,12 @@ nav .right a span{
 }
 .brands .big{
     width: 50px;
+}
+
+hr{
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 
@@ -149,17 +154,121 @@ nav .right a span{
 }
 
 /* Slider */
-.slider{
+.slider {
     width: 100%;
     margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-.slider img{
-    width: 210px;
+.slider figure {
+    text-align: center;
     margin: 0 38px;
+    transition: 0.1s;
+}
+.slider figure:hover {
+    filter: brightness(0.9);
+}
+.slider img {
+    width: 240px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.slider .big{
+    width: 180px;
+}
+.slider figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
 }
 
+
+/* Content box 1 */
+.box {
+    position: relative;
+    width: 80%;
+    max-width: 1100px;
+    height: 350px;
+    margin: 40px auto;
+    border-radius: 12px;
+    overflow: hidden;
+
+    background-image: url("https://www.electromaker.io/uploads/media-library/915836/Atom-Echo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Lapisan gelap di atas gambar agar teks lebih jelas */
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+/* Isi konten di dalam box */
+.box-content {
+    position: relative;
+    padding: 40px;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.box-content .tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #eeeff1;
+    margin-bottom: 20px;
+}
+
+.box-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.box-content .desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.box-content .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.box-content .btn:hover {
+    background: white;
+    color: #0f3156;
+}
 
 /* Responsive */
-/* Media 600 */
-@media (max-width: 600px){
+@media (max-width: 768px) {
+    .box {
+        height: 300px;
+    }
+    .box-content {
+        padding: 20px;
+    }
+    .box-content h2 {
+        font-size: 20px;
+    }
 }
+
