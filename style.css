@@ -259,16 +259,16 @@ hr{
     color: #0f3156;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .box {
-        height: 300px;
-    }
-    .box-content {
-        padding: 20px;
-    }
-    .box-content h2 {
-        font-size: 20px;
-    }
-}
 
+/* 3 box of content */
+.box3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    gap: 10px;
+}
+.box3 img{
+    width: 330px;
+}
